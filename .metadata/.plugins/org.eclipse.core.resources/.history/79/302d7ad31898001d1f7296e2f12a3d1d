@@ -1,0 +1,26 @@
+package bankaccountapp;
+
+public class BankAccountApp {
+
+	public static void main(String[] args) {
+		
+		Checking chkacc1 = new Checking("Tom Wilson", "257968572", 1500);
+		
+		Savings savacc1 = new Savings("Rich Lowe", "198763249", 2500);
+
+		savacc1.showInfo();
+		chkacc1.showInfo();
+		
+		
+		chkacc1.deposit(200);
+		chkacc1.withdraw(20);
+		chkacc1.transfer("Peter", 30);
+		
+		savacc1.deposit(200);
+		savacc1.withdraw(20);
+		savacc1.transfer("Peter", 30);
+		// Read a CSV files then create new accounts based on that data
+		
+	}
+
+}
